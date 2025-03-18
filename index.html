@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case File #2307</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="mystery-page">
+            <div class="case-file">
+                <h1>CONFIDENTIAL: Case File #2307</h1>
+                <div class="evidence-box">
+                    <p class="typewriter">The evidence has been collected. The clues have been analyzed.</p>
+                    <p class="typewriter">Only one question remains...</p>
+                    <h2 class="pulse">Who is the killer?</h2>
+                    
+                    <div class="input-section">
+                        <input type="text" id="killer-input" placeholder="Enter the killer's full name...">
+                        <button id="submit-btn">Submit</button>
+                    </div>
+                    
+                    <p id="hint-text" class="hidden">Check Evidence 4 once more</p>
+                    <button id="hint-btn">Need a hint?</button>
+                    
+                    <p id="wrong-answer" class="hidden">Incorrect. Try again.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div id="love-letter" class="hidden">
+            <!-- This will be populated with your love letter -->
+            <h2>Congratulations Detective Maxson! You've solved the case!</h2>
+            <h3>Now, somebody has a special message for you:</h3>
+            <h1></h1>
+            <h1>My Dearest Love</h1>
+            <div id="letter-content">
+                <!-- Your love letter will go here -->
+            </div>
+            <div class="signature">
+                <p>Forever and Always,</p>
+                <p>Jamesy</p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

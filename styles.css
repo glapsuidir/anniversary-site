@@ -1,0 +1,146 @@
+body {
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #0f0;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+.case-file {
+    background-color: #111;
+    border: 2px solid #0f0;
+    padding: 30px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+}
+
+h1, h2 {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.evidence-box {
+    margin-top: 30px;
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid #0f0;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #0f0; }
+}
+
+.pulse {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.input-section {
+    margin: 30px 0;
+    text-align: center;
+}
+
+input {
+    background-color: #222;
+    border: 1px solid #0f0;
+    color: #0f0;
+    padding: 10px;
+    width: 70%;
+    font-family: 'Courier New', monospace;
+    margin-right: 10px;
+}
+
+button {
+    background-color: #0f0;
+    color: #000;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+button:hover {
+    background-color: #00cc00;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+#hint-btn {
+    display: block;
+    margin: 20px auto;
+    background-color: #333;
+    color: #0f0;
+}
+
+#hint-text {
+    text-align: center;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+#wrong-answer {
+    color: #f00;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Love letter styling */
+#love-letter {
+    background-color: #fff;
+    color: #333;
+    padding: 40px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+}
+
+#love-letter h1 {
+    color: #d23b68;
+    text-align: center;
+    font-family: 'Georgia', serif;
+    margin-bottom: 30px;
+}
+
+#letter-content {
+    text-align: justify;
+    margin-bottom: 40px;
+}
+
+.signature {
+    text-align: right;
+    font-style: italic;
+    margin-top: 40px;
+} 
