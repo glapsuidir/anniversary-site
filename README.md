@@ -22,7 +22,7 @@ This website serves only as the verification system and reward delivery for the 
 ### Technical Details
 This solution verification page was built using:
 - HTML5 for structure
-- CSS3 for styling and animations (including typewriter effect and pulsing text)
+- CSS for styling and animations (including typewriter effect and pulsing text)
 - Vanilla JavaScript for answer validation and the reveal mechanism
 - GitHub Pages for hosting
 
