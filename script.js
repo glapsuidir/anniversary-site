@@ -8,10 +8,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const loveLetter = document.getElementById('love-letter');
     const letterContent = document.getElementById('letter-content');
     
-    // Set the correct answer
     const correctAnswer = "Thomas Crane";
     
-    // Your love letter content - replace with your own message
     const loveLetterText = `        
         <p>Good job solving the mystery baby! I'm sure it wasn't very hard for you, but you still did so so good!</p>
         
@@ -28,15 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
         <p>Happy anniversary, my love. Here's to many, many more.</p>
     `;
     
-    // Show hint when hint button is clicked
     hintBtn.addEventListener('click', function() {
         hintText.classList.remove('hidden');
     });
     
-    // Check the answer when submit button is clicked
     submitBtn.addEventListener('click', checkAnswer);
     
-    // Also check answer when Enter key is pressed
     killerInput.addEventListener('keypress', function(e) {
         if (e.key === 'Enter') {
             checkAnswer();
@@ -45,28 +40,16 @@ document.addEventListener('DOMContentLoaded', function() {
     
     function checkAnswer() {
         const userAnswer = killerInput.value.trim().toLowerCase();
-        
         if (userAnswer === correctAnswer.toLowerCase()) {
-            // Show the love letter
             mysteryPage.classList.add('hidden');
             loveLetter.classList.remove('hidden');
-            
-            // Set the love letter content
             letterContent.innerHTML = loveLetterText;
-            
-            // Scroll to top to ensure letter is visible
             window.scrollTo(0, 0);
         } else {
-            // Show wrong answer message
             wrongAnswer.classList.remove('hidden');
-            
-            // Clear the input
             killerInput.value = '';
-            
-            // Focus back on the input
             killerInput.focus();
             
-            // Hide the wrong answer message after 3 seconds
             setTimeout(function() {
                 wrongAnswer.classList.add('hidden');
             }, 3000);
